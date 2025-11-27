@@ -77,7 +77,9 @@ class MainActivity : ComponentActivity() {
                                 Text("Hamburguesa")
                             }
                         }
-                    }
+                    },
+                    modifier = Modifier.background(Color(0xFFFFF5AF)
+                    )
                 )
             }
         ) { innerPadding ->
