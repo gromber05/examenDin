@@ -50,6 +50,7 @@ fun AgrupacionesScreen(
         Agrupaciones("Agutin", R.drawable.elgremio, AgrupacionesTypes.ROMANCEROS ),
         Agrupaciones("Fran y el huerto", R.drawable.egocentricos, AgrupacionesTypes.PREGONEROS ),
     )
+
     Column(
         modifier = modifier.fillMaxSize()
             .background(Color(0xFFDBD9C4))
@@ -124,14 +125,14 @@ fun AgrupacionItem(name: String, image: Int, type: AgrupacionesTypes, modifier: 
         }
 
         if (dialog) {
-            BasicAlertDialog(
+            AlertDialog(
                 onDismissRequest = { dialog = false },
                 modifier = Modifier.clip(RoundedCornerShape(20.dp))
             ) {
                 Column(
                     modifier = Modifier
                         .width(300.dp)
-                        .background(Color(0xFFB6AF7B))
+                        .background(Color(0xFFFFF5AF))
                         .padding(20.dp),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
@@ -145,17 +146,23 @@ fun AgrupacionItem(name: String, image: Int, type: AgrupacionesTypes, modifier: 
                             .clip(RoundedCornerShape(10.dp))
                     )
 
-                    Spacer(Modifier.height(16.dp))
+                    Spacer(Modifier.padding(16.dp))
 
                     Text(
                         text = name,
                         color = Color(0xFF6BDB24)
                     )
-                    Spacer(Modifier.height(8.dp))
+                    Spacer(Modifier.padding(8.dp))
                     Text(
                         text = type.toString(),
                         color = Color(0xFF6BDB24)
                     )
+                    Spacer(Modifier.padding(8.dp))
+                    Button(
+                        onClick = { dialog = false }
+                    ) {
+                        Text(text = "Cerrar")
+                    }
                 }
             }
         }

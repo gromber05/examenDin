@@ -1,6 +1,5 @@
 # Examen DESARROLLO DE INTERFACES
-### Gonzalo Romero Bernal
-
+## Gonzalo Romero Bernal 2DAM
 # PARTE 7
 
 ## 1. Pruebas funcionales
@@ -10,10 +9,12 @@ He realizado distintas pruebas para poder comprobar como ha ido el proyecto a lo
 3. Se ha comprobado que los botones realizan correctamente sus funciones ya que se permite al usuario que pueda navegar libremente por la aplicación.
 
 ## 2. Integración lista + dialog
-Hemos integrado el dialog en la lista mediante la integración de los items que hemos creado
+A la hora de realizar la lista de las distintas agrupaciones, se ha realizado un item reutilizable para cada elemento que permite que cada componente se pueda visualizar de la misma manera. Dentro de este item, se ha implementado una variable que se guarda aun cuando se recompone la vista, de tipo `Boolean` para que, cuando esta se establezca `true`, se muestre un dialogo.
+
+https://github.com/gromber05/examenDin/blob/8f4226a93c1e20573b61e8f7f2983cf16dbd37fd/app/src/main/java/com/gromber05/examendin/AgrupacionesScreen.kt#L84-L164
 
 ## 3. Regresión
-He realizado distintos cambios cuando he terminado 
+He realizado distintos cambios cuando he terminado, ya que los colores que poseía la aplicación no concordaban, o se hacía bastante malo para la vista, lo que lo convertía en una aplicación con poca accesibilidad.
 
 # PARTE 8
 ## 1. Diseño
@@ -24,6 +25,10 @@ de este que es son el verde y el amarillo.
 Se han usado distintas tonalidades de colores para facilitar la accesibilidad de la aplicaión aplicando diversas prácticas como el buen contraste entre elementos que posee funcionalidades y los que no.
 
 ## 2. Capturas
+![alt text](captura1.png)
+![alt text](captura2.png)
+![alt text](captura3.png)
+![alt text](captura4.png)
 
 ## 3. Accesibilidad (También parte 6)
 
