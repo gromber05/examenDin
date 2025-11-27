@@ -25,10 +25,10 @@ de este que es son el verde y el amarillo.
 Se han usado distintas tonalidades de colores para facilitar la accesibilidad de la aplicaión aplicando diversas prácticas como el buen contraste entre elementos que posee funcionalidades y los que no.
 
 ## 2. Capturas
-![alt text](captura1.png)
-![alt text](captura2.png)
-![alt text](captura3.png)
-![alt text](captura4.png)
+![Página de agrupaciones](captura1.png)
+![Página principal](captura2.png)
+![Página de disfraces](captura3.png)
+![Se muestra dialogo de agrupaciones](captura4.png)
 
 ## 3. Accesibilidad (También parte 6)
 

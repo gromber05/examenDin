@@ -11,12 +11,17 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.gromber05.examendin.ui.theme.ExamenDinTheme
 
+/*
+    Esta página es la vista principal. Aquí se recoge el comportamiento principal de los botones que hacen posible la navegación
+    dentro de la aplicación.
+*/
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
@@ -29,8 +34,8 @@ fun HomeScreen(
         ) {
             Text(
                 text = "Carnaval Cádiz 2025",
-                fontSize = 16.sp,
-                color = MaterialTheme.colorScheme.primary
+                fontSize = 30.sp,
+                color = Color(0xFF4CAF50)
 
             )
 
@@ -38,8 +43,8 @@ fun HomeScreen(
 
             Text(
                 text = "Aplicación para informarte sobre el carnaval de cádiz del año 2025",
-                fontSize = 10.sp,
-                color = MaterialTheme.colorScheme.secondary
+                fontSize = 14.sp,
+                color = Color(0xFF4CAF50)
             )
 
             Spacer(Modifier.padding(20.dp))

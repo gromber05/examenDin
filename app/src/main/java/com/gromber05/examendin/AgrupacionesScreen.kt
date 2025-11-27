@@ -36,6 +36,12 @@ import androidx.compose.ui.unit.sp
 import com.gromber05.examendin.domain.model.Agrupaciones
 import com.gromber05.examendin.domain.model.AgrupacionesTypes
 
+/*
+    Se ha creado esta funcion composable para diferenciarla de la vista principal.
+    En lo que a datos se refiere, esta lista posee una lista de clases instanciadas, en este caso, de la data class Agrupaciones.
+    Posee una columna que funciona como elemento principal, luego tiene un botón funcional para volver a la pantalla de inicio.
+    Por último, posee una lazyColumn, para no cargar los elementos que no se muestren en la vista.
+*/
 @Composable
 fun AgrupacionesScreen(
     modifier: Modifier = Modifier,
@@ -82,6 +88,13 @@ fun AgrupacionesScreen(
     }
 }
 
+
+/*
+    Este item se ha creado para que se pueda reutilizar dentro de la aplicación.
+    Se ha creado una tarjeta que recoge una imagen, en este caso, la que le llega y también recoge
+    el nombre de la agrupación y el tipo.
+    También posee un dialogo que se muestra dependiendo del estado de la variable booleana `dialog`
+*/
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AgrupacionItem(name: String, image: Int, type: AgrupacionesTypes, modifier: Modifier = Modifier) {

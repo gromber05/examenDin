@@ -81,6 +81,11 @@ class MainActivity : ComponentActivity() {
                 )
             }
         ) { innerPadding ->
+            /*
+             Este trozo de código es el que permite la navegación.
+             Hace uso de un when, con una variable de tipo `Int` que recompone la vista de la aplicación
+             según su valor.
+            */
             var pantallaActual by rememberSaveable { mutableStateOf(0) }
 
             when (pantallaActual) {
