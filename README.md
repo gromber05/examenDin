@@ -59,12 +59,5 @@ Se han realizado pruebas sobre los distintos componentes que posee la aplicació
 ## 7. Conclusiones
 
 Esta aplicación llega al objetivo de ofrecer una vista del Carnaval de Cadiz 2025 que permite al usuario consultar distintas agrupaciones y poder visualizar sus detalles de una forma rápida y sencilla.
-He aplicado dentro de este proyecto conceptos clave de Jetpack Compose como lo son los estados que se mantienen aunque se recomponga la vista, la lazyColumn y el lazyVerticalGrid que permite que la lista cargue solo los objetos en 
-
-
-
-
-
-Se han aplicado conceptos clave de Jetpack Compose (estado, listas perezosas, diálogos, tarjetas) y se ha cuidado el diseño visual y la usabilidad.
-El resultado es una app pequeña, pero bien estructurada, fácilmente ampliable y adecuada para los criterios de evaluación del módulo.
-
+He aplicado dentro de este proyecto conceptos clave de Jetpack Compose como lo son los estados que se mantienen aunque se recomponga la vista, la lazyColumn y el lazyVerticalGrid que permite que la lista cargue solo los objetos que se pueden visualizar.
+Como resultado hemos obtenido una app pequeña, pero con una buena estructura y que puede ser ampliable

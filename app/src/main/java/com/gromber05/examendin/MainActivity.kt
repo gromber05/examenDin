@@ -101,62 +101,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    @Composable
-    fun HomeScreen(
-        modifier: Modifier = Modifier,
-        onAgrupaciones: () -> Unit,
-        onDisfraces: () -> Unit) {
-        ExamenDinTheme {
-            Column(
-                modifier = modifier.fillMaxSize(),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(
-                    text = "Carnaval Cádiz 2025",
-                    fontSize = 16.sp,
-                    color = MaterialTheme.colorScheme.primary
 
-                )
-
-                Spacer(Modifier.padding(10.dp))
-
-                Text(
-                    text = "Aplicación para informarte sobre el carnaval de cádiz del año 2025",
-                    fontSize = 10.sp,
-                    color = MaterialTheme.colorScheme.secondary
-                )
-
-                Spacer(Modifier.padding(20.dp))
-
-                Image(
-                    painter = painterResource(R.drawable.carnaval1),
-                    contentDescription = "Foto del carnaval de cádiz"
-                )
-
-                Button(onClick = {
-                    onAgrupaciones()
-                }) {
-                    Text(text = "Ver Agrupaciones")
-                }
-
-
-                Button(onClick = {
-                    onDisfraces()
-                }) {
-                    Text(text = "Ver Disfraces")
-                }
-            }
-        }
-    }
-
-
-
-    @Preview(
-        showBackground = true,
-    )
-    @Composable
-    fun Preview_MainScreen() {
-        MainScreen()
-    }
 }
 
